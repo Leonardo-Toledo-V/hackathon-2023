@@ -9,7 +9,7 @@ export default function Header() {
                 <NavbarBrand >
                     <img
                         className="w-20"
-                        src="kaajtuul-white.svg" />
+                        src="eye.svg" />
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-12 font-lato">
                     <NavbarItem>
@@ -30,7 +30,7 @@ export default function Header() {
                 </NavbarContent>
             </NavbarContent>
             <NavbarItem>
-          <Button className="text-white" as={Link} color="default" href="#" variant="bordered">
+          <Button className="text-white" as={Link} color="default" href="/login" variant="bordered">
             Sign Up
           </Button>
         </NavbarItem>

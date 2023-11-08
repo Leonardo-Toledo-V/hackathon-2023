@@ -67,7 +67,7 @@ export default function FormLogin() {
                 <div className="w-full max-w-md">
                     <div className="flex flex-col justify-center items-center space-y-6">
                         <img className="w-16" src="/eye.svg" alt="" />
-                        <h1 className="mx-auto h-12 w-auto text-4xl flex justify-center text-[#48453A] font-inter mb-12 uppercase">
+                        <h1 className="mx-auto h-12 w-auto text-4xl flex justify-center text-white font-inter mb-12 uppercase">
                             Kaaj Tuul'
                         </h1>
                     </div>
