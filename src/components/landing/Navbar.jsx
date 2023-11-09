@@ -23,7 +23,7 @@ export default function Header() {
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="#" className="text-[#ffffffca]">
+                        <Link href="https://www.youtube.com/watch?v=fGIWsQDif_M&ab_channel=PesoPluma" className="text-[#ffffffca]">
                             Integrations
                         </Link>
                     </NavbarItem>

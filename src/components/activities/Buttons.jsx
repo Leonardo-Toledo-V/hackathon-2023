@@ -22,26 +22,26 @@ const Likes = () => {
 
   return (
     <>
-      <div className="flex justify-center mt-4">
+      <div className="flex mt-4 ml-8">
         <button
           id='likeButton'
-          className={`bg-[url(./like.png)] mr-10 w-10 h-10 bg-contain ${likeVisible ? '' : 'hidden'}`}
+          className={`bg-[url(./like.png)] mr-4 w-5 h-5 bg-contain ${likeVisible ? '' : 'hidden'}`}
           onClick={handleButtonClickLike}
         ></button>
         <button
           id='otherLike'
-          className={`bg-[url(./otherLike.png)] mr-10 w-10 h-10 bg-contain ${otherLikeVisible ? '' : 'hidden'}`}
-          onClick={() => {}} // No realiza ninguna acción al hacer clic
+          className={`bg-[url(./otherLike.png)] mr-4 w-5 h-5 bg-contain bg-no-repeat  ${otherLikeVisible ? '' : 'hidden'}`}
+          onClick={() => {}}
         ></button>
 
         <button
           id='dislikeButton'
-          className={`bg-[url(./dislike.png)] w-10 h-10 bg-contain ${dislikeVisible ? '' : 'hidden'}`}
+          className={`bg-[url(./dislike.png)] w-5 h-5 bg-contain ${dislikeVisible ? '' : 'hidden'}`}
           onClick={handleButtonClick}
         ></button>
         <button
           id='otherDislike'
-          className={`bg-[url(./otherDislike.png)] w-10 h-10 bg-contain ${otherDislikeVisible ? '' : 'hidden'}`}
+          className={`bg-[url(./otherDislike.png)] w-5 h-5 bg-contain ${otherDislikeVisible ? '' : 'hidden'}`}
           onClick={() => {}}
         ></button>
       </div>

@@ -29,7 +29,7 @@ const Activities = () => {
                         </div>
 
                         <div>
-                            <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <List title="Nuevo hospital en Suchiapa" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
 
@@ -48,7 +48,7 @@ const Activities = () => {
                         </div>
 
                         <div>
-                            <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <List title="Campaña de salud en Tuxtla Chico" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
 
@@ -66,7 +66,7 @@ const Activities = () => {
                         </div>
 
                         <div>
-                            <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <List title="Nueva clinica de la mujera en San Fernando" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
 
@@ -84,7 +84,7 @@ const Activities = () => {
                         </div>
 
                         <div>
-                            <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <List title="Campaña contra el Sida en Yajalón" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
 
