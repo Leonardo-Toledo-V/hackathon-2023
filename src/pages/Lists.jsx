@@ -17,25 +17,32 @@ const Lists = () => {
                     <div className='w-[900px] flex text-sm'>
                         <div className='bg-[url(./assets/listsimg2.png)] w-[200px] h-[70px] mt-3 bg-cover ml-10 mr-10'></div>
                         <div className='bg-[url(./assets/listsimg3.png)] w-[2px] h-[80px]'></div>
-                        <List />
+                        <List title="Secretaria de educación" subtitle="Conoce más" />
                     </div>
                     <div className='bg-[url(./assets/listsimg4.png)] w-[1000px] h-[1px] mt-4'></div>
 
                     <div className='w-[900px] flex text-sm mt-10'>
                         <div className='bg-[url(./assets/listsimg2.png)] w-[200px] h-[70px] mt-3 bg-cover ml-10 mr-10'></div>
                         <div className='bg-[url(./assets/listsimg3.png)] w-[2px] h-[80px]'></div>
-                        <List />
+                        <List title="Secretaria de salud" subtitle="Conoce más" />
                     </div>
                     <div className='bg-[url(./assets/listsimg4.png)] w-[1000px] h-[1px] mt-4'></div>
 
                     <div className='w-[900px] flex text-sm mt-10'>
                         <div className='bg-[url(./assets/listsimg2.png)] w-[200px] h-[70px] mt-3 bg-cover ml-10 mr-10'></div>
                         <div className='bg-[url(./assets/listsimg3.png)] w-[2px] h-[80px]'></div>
-                        <List />
+                        <List title="Secretaria de obras públicas" subtitle="Conoce más" />
                     </div>
                     <div className='bg-[url(./assets/listsimg4.png)] w-[1000px] h-[1px] mt-4'></div>
 
+                    <div className='w-[900px] flex text-sm mt-10'>
+                        <div className='bg-[url(./assets/listsimg2.png)] w-[200px] h-[70px] mt-3 bg-cover ml-10 mr-10'></div>
+                        <div className='bg-[url(./assets/listsimg3.png)] w-[2px] h-[80px]'></div>
+                        <List title="Secretaria de obras públicas" subtitle="Conoce más" />
+                    </div>
+                    <div className='bg-[url(./assets/listsimg4.png)] w-[1000px] h-[1px] mt-4 mb-10'></div>
                 </div>
+
             </div>
         </>
     )
