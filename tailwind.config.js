@@ -7,12 +7,17 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-        'lato': ['Lato', 'sans-serif'] ,
-        'inter': ['Inter','sans-serif'],
-    } 
+    extend: {
+      colors:{
+        blue:"#01A3A4",
+        lightblue:"#01A3A4"
+      },
     },
-    darkMode: "class",
-    plugins: [nextui()]
+    fontFamily: {
+      'lato': ['Lato', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
+    }
+  },
+  darkMode: "class",
+  plugins: [nextui()]
 }

@@ -14,7 +14,7 @@ export default function Main() {
                     className='mt-10'>
                     <p className='text-center xl:text-left font-lato text-md mx-8 leading-tight text-[#C63F26]'>Justicia para Chiapas</p>
                     <h1 className=' text-[#2C2C2C] text-center xl:text-left text-2xl xl:text-[6rem] leading-none font-inter mx-6 uppercase'>Balam</h1>
-                    <br/><span className='text-[#93311F] text-left text-2xl xl:text-[6rem] leading-5 font-inter mx-6  uppercase'>transparencia<br/></span>
+                    <br/><span className='text-[#93311F] text-left text-2xl xl:text-[6rem] leading-5 font-inter mx-6 uppercase'>transparencia<br/></span>
                 </motion.div>
                 <div className="bg-[url('/img1.png')] xl:h-[33rem] bg-center bg-cover xl:flex" >
                     <div className='w-[70rem] pt-2'>
