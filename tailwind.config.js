@@ -10,7 +10,7 @@ export default {
     extend: {
       colors:{
         blue:"#01A3A4",
-        lightblue:"#01A3A4"
+        lightblue:"#01A3A4",
       },
     },
     fontFamily: {

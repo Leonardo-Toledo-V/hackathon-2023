@@ -6,10 +6,10 @@ const Lists = () => {
     return (
         <>
             <Header />
-            <div className="bg-[#ebe0d4]">
+            <div className="">
                 <div className='mb-10'>
                     <div className='w-full h-[300px] bg-[url(./andres/activitiesimg1.png)] bg-cover bg-center'>
-                        <p className='font-inter pt-[100px] ml-10 text-white text-7xl uppercase'>Secretarias del estado</p>
+                        <h1 className='font-inter pt-[100px] ml-10 text-white text-7xl uppercase'>Secretarias del estado</h1>
                     </div>
                 </div>
 

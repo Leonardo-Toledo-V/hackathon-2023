@@ -8,7 +8,7 @@ export default function Header() {
             <NavbarContent justify="start" >
                 <NavbarBrand >
                     <img
-                        className="w-12"
+                        className="w-10"
                         src="eye.svg" />
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-12 font-lato">
@@ -30,7 +30,7 @@ export default function Header() {
                 </NavbarContent>
             </NavbarContent>
             <NavbarItem>
-                <Button className="text-[#ffffffca]" as={Link} color="blue" href="/login" variant="flat" >
+                <Button className="text-[#ffffffca] bg-gradient-to-r from-[#e55039] to-[#b71540]" as={Link} href="/login" variant="light" size="sm">
                     Sign Up
                 </Button>
             </NavbarItem>
