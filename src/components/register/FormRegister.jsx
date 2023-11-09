@@ -1,5 +1,6 @@
 import React from 'react'
-import { Input, Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
+import axios from "../../libs/axios";
 
 const EyeSlashFilledIcon = (props) => (
     <svg
@@ -60,6 +61,34 @@ const EyeFilledIcon = (props) => (
 export default function FormRegister() {
     const [isVisible, setIsVisible] = React.useState(false);
 
+    const [data, setData] = React.useState({
+        username: "",
+        email: "",
+        password: "",
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('/user/register', JSON.stringify({
+            "username": data.username,
+            "email": data.email,
+            "password": data.password
+        })).then(function (response) {
+            
+        }).catch(function (err) {
+            console.log(err)
+        });
+    };
+
     const toggleVisibility = () => setIsVisible(!isVisible);
     return (
         <>
@@ -71,12 +100,15 @@ export default function FormRegister() {
                             Balam
                         </h1>
                     </div>
-                    <form className="mt-8 space-y-6">
+                    <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                         <div className="">
                             <div>
                                 <Input
-                                    type="email"
+                                onChange={handleChange}
+                                    type="username"
                                     label="Email"
+                                    name="email"
+                                    id="email"
                                     variant='underlined'
                                     placeholder="Enter your email"
                                     radius="sm"
@@ -84,9 +116,25 @@ export default function FormRegister() {
                                     className="h-14 text-[#48453A]"
                                 />
                             </div>
+                            <div className='mt-8'>
+                                <Input
+                                    onChange={handleChange}
+                                    label="Username"
+                                    variant='underlined'
+                                    name="username"
+                                    id="username"
+                                    placeholder="Enter your username"
+                                    radius="sm"
+                                    isClearable
+                                    className="h-14 text-[#48453A]"
+                                />
+                            </div>
                             <div className="mt-8">
                                 <Input
+                                    onChange={handleChange}
                                     label="Password"
+                                    name="password"
+                                    id="password"
                                     variant='underlined'
                                     radius="sm"
                                     endContent={
