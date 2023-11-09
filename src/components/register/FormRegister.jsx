@@ -83,7 +83,7 @@ export default function FormRegister() {
             "email": data.email,
             "password": data.password
         })).then(function (response) {
-            
+
         }).catch(function (err) {
             console.log(err)
         });
@@ -95,7 +95,11 @@ export default function FormRegister() {
             <div className="flex min-h-full justify-center px-4 items-center sm:px-6 lg:px-8">
                 <div className="w-full max-w-md">
                     <div className="flex flex-col justify-center items-center space-y-6">
-                        <img className="w-16" src="/eye.svg" alt="eye" />
+                        <a color="foreground" href="/" className="text-[#ffffffca]">
+                            <img
+                                className="w-16"
+                                src="eye.svg" />
+                        </a>
                         <h1 className="mx-auto h-12 w-auto text-4xl flex justify-center text-white font-inter mb-12 uppercase">
                             Balam
                         </h1>
@@ -104,7 +108,7 @@ export default function FormRegister() {
                         <div className="">
                             <div>
                                 <Input
-                                onChange={handleChange}
+                                    onChange={handleChange}
                                     type="username"
                                     label="Email"
                                     name="email"
