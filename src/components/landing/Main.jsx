@@ -36,39 +36,43 @@ export default function Main() {
                     </div>
                 </div>
             </div>
+
+
             <div>
-                <div className='flex justify-start mt-24 xl:mt-44 lg:mt-32 md:mt-28 sm:mt-24'>
-                    <div className='sm:w-[37rem] sm:h-[30rem]'>
-                        <img className='hidden sm:block xl:w-full xl:h-full object-cover bg-top md:w-[450px] sm:w-[400px]' src="img2.png" alt="" />
+                <div className='flex justify-center xl:justify-start mt-24 xl:mt-44 lg:mt-32 md:mt-28 sm:mt-24'>
+                    <div className='sm:w-[37rem] sm:h-[30rem] hidden sm:block'>
+                        <img className=' xl:w-full xl:h-full object-cover bg-top sm:w-[400px] sm:h-[480px] md:w-[450px] md:h-[530px]' src="img2.png" alt="" />
                     </div>
-                    <div className='flex flex-col ml-8 mr-8 xl:ml-24 xl:mt-12 lg:ml-16 md:mt-6 md:ml-14 sm:ml-8 sm:mt-8'>
+                    <div className='flex flex-col w-full ml-8 xl:ml-24 xl:mt-12 lg:ml-16 md:mt-6 md:ml-14 sm:ml-8 sm:mt-8'>
                         <div>
                             <motion.h3
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className="text-3xl xl:text-7xl text-[#ffffffca] uppercase font-inter lg:text-6xl md:text-5xl sm:text-3xl">Un chiapas<br /><span className='text-[#b71540]'>transparente</span></motion.h3>
+                                className="text-4xl xl:text-7xl text-[#ffffffca] uppercase font-inter lg:text-6xl md:text-5xl sm:text-3xl">Un chiapas<span className='text-[#b71540]'> transparente</span></motion.h3>
                         </div>
                         <div className='mt-10 sm:flex sm:justify-between sm:items-center xl:mt-12 text-[#ffffffca] font-lato text-xl gap-8 lg:text-lg md:mr-3 sm:gap-6 sm:mt-10'>
                             <motion.p
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='max-w-xs lg:w-[300px] md:w-[230px] sm:w-[170px] sm:text-base md:text-lg'>"Balam, en el lenguaje maya, lleva consigo un significado esencial “el jaguar”.
+                                className='mr-8 xl:max-w-xs lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base md:text-xl lg:text-2xl'>"Balam, en el lenguaje maya, lleva consigo un significado esencial “el jaguar”.
                                 A través de este nombre, nuestra misión es presentar al pueblo chiapaneco cómo la justicia se pone en práctica y cómo el pueblo tiene voz y voto en asuntos de importancia.</motion.p>
                             <motion.p
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='mt-14 max-w-xs lg:w-[300px] md:w-[230px] sm:w-[170px] sm:text-base'>Balam proporciona acceso a información detallada sobre las actividades del gobierno en Chiapas.<br />
+                                className='mt-5 mr-8 xl:max-w-xs lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base sm:mt-0 md:text-xl lg:text-2xl'>Balam proporciona acceso a información detallada sobre las actividades del gobierno en Chiapas.<br />
                                 Ofreciendo una visión completa de cómo se utilizan los recursos públicos para el bienestar de la comunidad chiapaneca.</motion.p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
             <div>
                 <div className='flex justify-end mt-28 xl:mt-44 lg:mt-28 md:mt-24 sm:mt-20'>
-                    <div className='flex flex-col ml-12 xl:ml-12 xl:mt-16 lg:mt-8 lg:mr-10 md:mt-6 md:mr-16 sm:mt-8 sm:mr-12'>
+                    <div className='flex flex-col ml-12 mr-8 xl:ml-12 xl:mt-16 lg:mt-8 lg:mr-10 md:mt-6 md:mr-16 sm:mt-8 sm:mr-12'>
                         <motion.div
                             variants={fadeIn("up", 0.1)}
                             initial="hidden"
@@ -93,11 +97,13 @@ export default function Main() {
                                 whileInView={"show"}>Nuestra misión es mostrar al pueblo chiapaneco cómo se practica la justicia y cómo pueden ejercer su voz y voto. Queremos ser un puente entre las instituciones de justicia y la comunidad, proporcionando educación y recursos para que las personas entiendan sus derechos y participen en la toma de decisiones que los afectan. <br /><br />Chiapas merece una justicia accesible y participativa, y trabajamos para hacerlo posible.</motion.p>
                         </div>
                     </div>
-                    <div className='w-[45rem] h-[30rem]'>
-                        <img className='object-cover w-full h-full lg:w-[400px] hidden sm:block' src="img3.png" alt="" />
+                    <div className='w-[45rem] h-[30rem] hidden sm:block'>
+                        <img className='object-cover w-full h-full lg:w-[400px] ' src="img3.png" alt="" />
                     </div>
                 </div>
             </div>
+
+            
             <div className='py-32'>
                 <Sponsors />
             </div>
