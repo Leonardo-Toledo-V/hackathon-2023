@@ -8,18 +8,18 @@ export default function Header() {
             <NavbarContent justify="start" >
                 <NavbarBrand >
                     <img
-                        className="w-14"
-                        src="eye.svg" />
+                        className="w-36"
+                        src="eye2.svg" />
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-12 font-lato">
                     <NavbarItem>
-                        <Link href="#" className="text-[#0F0F0F]">
-                            Features
+                        <Link href="/lists" className="text-[#0F0F0F]">
+                            Secretarias
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link href="#" className="text-[#0F0F0F]">
-                            Customers
+                        <Link href="/activities" className="text-[#0F0F0F]">
+                            Actividades
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
