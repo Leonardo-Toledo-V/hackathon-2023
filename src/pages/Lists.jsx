@@ -8,8 +8,8 @@ const Lists = () => {
             <Header />
             <div className="bg-[#0F0F0F] dark">
                 <div className='mb-10'>
-                    <div className='w-full h-[300px] bg-[url(./andres/activitiesimg1.png)] bg-cover bg-center'>
-                        <h1 className='font-inter pt-[100px] ml-10 text-white text-7xl uppercase'>Secretarias del estado</h1>
+                    <div className='w-full h-[300px] bg-[url(./andres/activitiesimg1.png)] bg-cover bg-center flex justify-center'>
+                        <h1 className='font-inter pt-[100px] text-white text-7xl uppercase'>Secretarias del estado</h1>
                     </div>
                 </div>
 
