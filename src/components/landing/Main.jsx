@@ -13,7 +13,7 @@ export default function Main() {
                     variants={fadeIn("up", 0.1)}
                     initial="hidden"
                     whileInView={"show"}>
-                    <p className='text-center xl:text-left font-lato text-lg mx-8 text-[#b71540]'>Dentro de </p>
+                    <p className='text-center xl:text-left font-lato text-lg mx-8 text-[#b71540]'>La justicia en tu mano </p>
                     <h1 className=' text-[#ffffffca] text-center xl:text-left text-2xl xl:text-8xl font-inter mx-6 uppercase'>Balam<br />
                         <span className='bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase '>transparencia</span></h1>
                     <br />
