@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import Login from './pages/Login.jsx'
 import Lists from './pages/LIsts.jsx'
+import Activities from './pages/Activities.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NextUIProvider } from '@nextui-org/react'
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<App />} />
           <Route path="/login" element={<Login />} />
           <Route path="/lists" element={<Lists />} />
+          <Route path="/activities" element={<Activities />} />
         </Routes>
       </BrowserRouter>
     </NextUIProvider>
