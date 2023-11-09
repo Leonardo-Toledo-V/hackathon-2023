@@ -4,14 +4,14 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 
 export default function Header() {
     return (
-        <Navbar className="bg-[#0F0F0F]" position="static">
+        <Navbar className="bg-[#0F0F0F] hidden sm:block" position="static">
             <NavbarContent justify="start" >
                 <NavbarBrand >
                     <img
                         className="w-10"
                         src="eye.svg" />
                 </NavbarBrand>
-                <NavbarContent className="hidden sm:flex gap-12 font-lato">
+                <NavbarContent className="flex sm:flex gap-12 font-lato">
                     <NavbarItem>
                         <Link href="/lists" className="text-[#ffffffca]">
                             Secretarias
