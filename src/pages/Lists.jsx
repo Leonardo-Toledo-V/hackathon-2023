@@ -6,9 +6,9 @@ const Lists = () => {
     return (
         <>
             <Header />
-            <div className="bg-[#EBE0D4]">
+            <div className="bg-[#ebe0d4]">
                 <div className='mb-10'>
-                    <div className='w-full mt-10 h-[300px] bg-[url(./assets/listsimg1.png)] bg-cover'>
+                    <div className='w-full h-[300px] bg-[url(./assets/listsimg1.png)] bg-cover'>
                         <p className='font-inter pt-[100px] ml-10 text-white text-7xl uppercase'>Secretarias del estado</p>
                     </div>
                 </div>
