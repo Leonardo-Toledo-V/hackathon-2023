@@ -7,6 +7,7 @@ import Lists from './pages/LIsts.jsx'
 import Activities from './pages/Activities.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NextUIProvider } from '@nextui-org/react'
+import Register from './pages/Register.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/login" element={<Login />} />
           <Route path="/lists" element={<Lists />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </NextUIProvider>

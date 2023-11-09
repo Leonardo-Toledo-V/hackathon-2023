@@ -1,5 +1,5 @@
 import React from "react";
-import {Button} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 const SocialIcons = ({ Icons }) => {
     return (
@@ -11,7 +11,7 @@ const SocialIcons = ({ Icons }) => {
                     rounded-full bg-gray-700 mx-1.5 text-xl hover:text-gray-100 hover:bg-gray-600
                     duration-300"
                 >
-                   <img className="w-4" src={`/${icon.name}.png`}/>
+                    <img className="w-4" src={`/${icon.name}.png`} />
                 </span>
             ))}
         </div>

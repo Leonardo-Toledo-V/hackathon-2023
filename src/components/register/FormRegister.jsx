@@ -57,7 +57,7 @@ const EyeFilledIcon = (props) => (
     </svg>
 );
 
-export default function FormLogin() {
+export default function FormRegister() {
     const [isVisible, setIsVisible] = React.useState(false);
 
     const toggleVisibility = () => setIsVisible(!isVisible);
