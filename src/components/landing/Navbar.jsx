@@ -1,10 +1,9 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 
-
 export default function Header() {
     return (
-        <Navbar className="bg-[#0F0F0F]" position="static">
+        <Navbar className="bg-[#0F0F0F] hidden sm:block" position="static">
             <NavbarContent justify="start" >
                 <NavbarBrand >
                     <img
@@ -29,11 +28,13 @@ export default function Header() {
                     </NavbarItem>
                 </NavbarContent>
             </NavbarContent>
-            <NavbarItem>
-                <Button className="text-[#ffffffca] bg-gradient-to-r from-[#e55039] to-[#b71540]" as={Link} href="/login" variant="light" size="sm">
-                    Sign Up
-                </Button>
-            </NavbarItem>
+            <NavbarContent justify="end">
+                <NavbarItem>
+                    <Button className="text-[#ffffffca] bg-gradient-to-r from-[#e55039] to-[#b71540]" as={Link} href="/login" variant="light" size="sm">
+                        Sign Up
+                    </Button>
+                </NavbarItem>
+            </NavbarContent>
         </Navbar>
     );
 }
