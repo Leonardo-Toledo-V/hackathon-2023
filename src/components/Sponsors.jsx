@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 export default function Sponsors() {
     return (
         <div className='flex justify-center items-center '>
-            <div className='flex justify-center items-center w-5/6'>
+            <div className='flex justify-center items-center w-[100%]'>
                 <Marquee direction='left' speed={50}>
                 <img className='w-28 mx-12' src="upgch.png" alt="upgch" />
                 <img className='w-44 mx-12' src="chiapas.png" alt="chiapas" />

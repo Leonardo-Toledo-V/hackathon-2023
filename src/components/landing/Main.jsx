@@ -13,7 +13,7 @@ export default function Main() {
                     whileInView={"show"}>
                     <p className='font-lato text-lg mx-6 sm:mx-8 text-[#b71540] text-left '>Justicia para todos </p>
                     <h1 className='text-2xl text-[#ffffffca] xl:text-8xl font-inter mx-6 uppercase xl:text-left lg:text-left z lg:text-7xl md:text-left z md:text-6xl sm:text-5xl'>Balam<br />
-                        <span className='text-2xl bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase lg:text-left lg:text-8xl'>transparencia</span></h1>
+                        <span className='text-2xl bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase lg:text-left xl:text-8xl lg:text-7xl sm:text-5xl md:text-6xl'>transparencia</span></h1>
                     <br />
                 </motion.div>
                 <div className="bg-[url('/img1.png')] bg-center bg-cover mt-[-1rem] xl:h-[30rem] xl:flex xl:bg-cover lg:h-[22rem]" >
