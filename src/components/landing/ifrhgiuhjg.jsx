@@ -3,13 +3,13 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 
 export default function Header() {
     return (
-        <Navbar position="static" className="bg-[#0F0F0F] font-lato">
+        <Navbar position="static" className="bg-[#0F0F0F]">
             <NavbarBrand>
                 <img
                     className="w-10"
                     src="eye.svg" />
             </NavbarBrand>
-            <NavbarContent className="hidden sm:flex gap-12" justify="center">
+            <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
                     <Link color="foreground" href="/activities" className="text-[#ffffffca]">
                         Features
