@@ -17,16 +17,16 @@ const Lists = () => {
 
                 <div className="flex flex-col items-center">
                     <div className='w-[900px] flex text-sm mb-4'>
-                        <div className='bg-[url(./andres/listsimg5.svg)] w-[200px] h-[70px] mt-3 bg-cover ml-10 mr-10'></div>
-                        <div className='bg-[url(./andres/listsimg3.png)] w-[2px] h-[80px]'></div>
+                        <div className='bg-[url(./andres/listsimg5.svg)] w-[200px] h-[70px] mt-3 bg-cover mr-10'></div>
+                        <div className='bg-[url(./andres/listsimg3.png)] w-[2px] h-[80px] ml-10'></div>
                         <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación"/>
                     </div>
                     <div className='bg-[url(./andres/listsimg3.png)] w-[1000px] h-[1px] mt-4'></div>
 
 
                     <div className='w-[900px] flex text-sm mt-10 mb-4'>
-                        <div className='bg-[url(./andres/listsimg2.svg)] w-[215px] h-[75px] mt-2 bg-cover ml-8 mr-[40px]'></div>
-                        <div className='bg-[url(./andres/listsimg3.png)] w-[1px] h-[80px]'></div>
+                        <div className='bg-[url(./andres/listsimg2.svg)] w-[215px] h-[75px] mt-2 bg-cover mr-[40px]'></div>
+                        <div className='bg-[url(./andres/listsimg3.png)] w-[1px] h-[80px] ml-8'></div>
                         <List title="Secretaria de salud" subtitle="Conoce más"  defaultContent="Dedicada a la salud"/>
                     </div>
                     <div className='bg-[url(./andres/listsimg3.png)] w-[1000px] h-[1px] mt-4'></div>
@@ -39,8 +39,8 @@ const Lists = () => {
                     <div className='bg-[url(./andres/listsimg3.png)] w-[1000px] h-[1px] mt-4'></div>
 
                     <div className='w-[900px] flex text-sm mt-8 mb-4'>
-                        <div className='bg-[url(./andres/listsimg7.svg)] w-[220px] h-[80px] bg-cover ml-8 mr-10'></div>
-                        <div className='bg-[url(./andres/listsimg3.png)] w-[2px] h-[80px]'></div>
+                        <div className='bg-[url(./andres/listsimg7.svg)] w-[220px] h-[80px] bg-cover mr-10'></div>
+                        <div className='bg-[url(./andres/listsimg3.png)] w-[2px] h-[80px] ml-8'></div>
                         <List title="Secretaria de turismo" subtitle="Conoce más" defaultContent="Dedicada al turismo" />
                     </div>
                     <div className='bg-[url(./andres/listsimg3.png)] w-[1000px] h-[1px] mt-4 mb-10'></div>
