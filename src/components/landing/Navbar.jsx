@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 
 export default function Header() {
     return (
-        <Navbar className="bg-[#0F0F0F] hidden sm:block" position="static">
+        <Navbar className="bg-[#0F0F0F]" position="static">
             <NavbarContent justify="start" >
                 <NavbarBrand >
                     <img
