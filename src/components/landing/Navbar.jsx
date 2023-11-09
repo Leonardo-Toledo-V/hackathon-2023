@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 
 export default function Header() {
     return (
-        <Navbar className="bg-[#EBE0D4]" shouldHideOnScroll>
+        <Navbar className="bg-[#0F0F0F]" shouldHideOnScroll>
             <NavbarContent justify="start" >
                 <NavbarBrand >
                     <img

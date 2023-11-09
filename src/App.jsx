@@ -5,7 +5,7 @@ import Main from './components/landing/Main'
 function App() {
 
   return (
-    <main className='bg-[#EBE0D4] h-full w-full'>
+    <main className='bg-[#0F0F0F] h-full w-full'>
         <Header/>
         <Main/>
     </main>
