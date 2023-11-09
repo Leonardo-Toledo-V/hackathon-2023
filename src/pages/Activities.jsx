@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/landing/Navbar'
 import List from '../components/lists/Accordion'
+import Sponsors from '../components/Sponsors'
 
 const Activities = () => {
     return (
@@ -78,7 +79,9 @@ const Activities = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className='py-32'>
+                    <Sponsors />
+                </div>
             </div>
 
         </>

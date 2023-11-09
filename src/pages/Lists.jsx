@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/landing/Navbar'
 import List from '../components/lists/Accordion'
+import Sponsors from '../components/Sponsors'
 
 const Lists = () => {
     return (
@@ -42,7 +43,9 @@ const Lists = () => {
                     </div>
                     <div className='bg-[url(./andres/listsimg3.png)] w-[1000px] h-[1px] mt-4 mb-10'></div>
                 </div>
-
+                <div className='py-32'>
+                    <Sponsors />
+                </div>
             </div>
         </>
     )
