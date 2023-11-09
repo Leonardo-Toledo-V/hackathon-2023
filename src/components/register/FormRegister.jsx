@@ -130,25 +130,16 @@ export default function FormRegister() {
                             >
                                 Ingresar
                             </button>
-                            <button
-                                type="submit"
-                                className="group relative flex w-full justify-center rounded-sm bg-white px-3 py-2 text-sm font-light text-[#444444]  transition duration-300 font-lato border-[0.1px] mb-4 border-gray-400"
-                            >
-                                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <img className="h-5 w-5" src="/google.svg" alt="google" />
-                                </span>
-                                Ingresar con Google
-                            </button>
                             <div className="flex justify-center">
                                 <div className="flex items-center mb-4 text-sm ">
                                     <label
                                         htmlFor="checkbox"
                                         className="font-lato text-[#B7B7B7] "
                                     >
-                                        ¿No tienes una cuenta?
+                                        ¿Ya tienes una cuenta?
                                     </label>
-                                    <a href="/register">
-                                        <span className="text-[#82774a] font-lato ml-2 cursor-pointer hover:text-[#48453A] duration-300 ">Registrarse</span>
+                                    <a href="/login">
+                                        <span className="text-[#82774a] font-lato ml-2 cursor-pointer hover:text-[#48453A] duration-300 ">Inicia sesion</span>
                                     </a>
                                 </div>
                             </div>
