@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/landing/Navbar'
 import Main from './components/landing/Main'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <main className='bg-[#0F0F0F] h-full w-full'>
         <Header/>
         <Main/>
+        <Footer/>
     </main>
   )
 }
