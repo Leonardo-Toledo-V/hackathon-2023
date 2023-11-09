@@ -8,7 +8,7 @@ export default function Main() {
                 <div className='mt-20'>
                     <h1 className='text-[#13322B] text-center xl:text-left text-2xl xl:text-8xl font-inter mx-6'>KAAJ TUUL</h1>
                 </div>
-                <div className="bg-[url('/img1.png')] xl:h-[30rem] bg-center bg-cover xl:flex" >
+                <div className="bg-[url('/img1.png')] xl:h-[33rem] bg-center bg-cover xl:flex" >
                     <div className='xl:max-w-5xl pt-2'>
                         <h2 className='xl:text-[5rem] leading-none font-inter text-white mx-6 tracking-widest text-center xl:text-left  '>TRANSPARENCIA EN CHIAPAS</h2>
                     </div>
