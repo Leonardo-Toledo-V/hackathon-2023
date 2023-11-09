@@ -2,8 +2,12 @@ import React from 'react'
 import Header from '../components/landing/Navbar'
 import List from '../components/lists/Accordion'
 import Sponsors from '../components/Sponsors'
+import Footer from '../components/footer/Footer'
+import Likes from '../components/activities/Buttons'
 
 const Activities = () => {
+
+
     return (
         <>
             <Header />
@@ -15,7 +19,7 @@ const Activities = () => {
                 </div>
 
                 <div className="flex flex-col items-center">
-                    <div className='w-[900px] flex text-sm mb-4'>
+                    <div className='w-[900px] flex text-sm mb-2'>
                         <div>
                             <div className='bg-[url(./andres/activities2.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
                         </div>
@@ -28,6 +32,27 @@ const Activities = () => {
                             <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
+
+                            <Likes />
+                        </div>
+                    </div>
+
+
+                    <div className='w-[900px] flex text-sm mb-4 mt-10'>
+                        <div>
+                            <div className='bg-[url(./andres/activities2.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
+                        </div>
+
+                        <div>
+                            <div className='bg-[url(./andres/listsimg3.png)] w-[1px] h-[140px] bg-cover'></div>
+                        </div>
+
+                        <div>
+                            <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
+                            <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
+
+                            <Likes />
                         </div>
                     </div>
 
@@ -44,22 +69,8 @@ const Activities = () => {
                             <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
-                        </div>
-                    </div>
 
-                    <div className='w-[900px] flex text-sm mb-4 mt-10'>
-                        <div>
-                            <div className='bg-[url(./andres/activities2.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
-                        </div>
-
-                        <div>
-                            <div className='bg-[url(./andres/listsimg3.png)] w-[1px] h-[140px] bg-cover'></div>
-                        </div>
-
-                        <div>
-                            <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
-                            <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
-                            <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
+                            <Likes />
                         </div>
                     </div>
 
@@ -76,12 +87,16 @@ const Activities = () => {
                             <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
+
+                            <Likes />
                         </div>
                     </div>
                 </div>
                 <div className='py-32'>
                     <Sponsors />
                 </div>
+                <Footer />
+
             </div>
 
         </>

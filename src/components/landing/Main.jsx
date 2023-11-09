@@ -100,7 +100,6 @@ export default function Main() {
             <div className='py-32'>
                 <Sponsors />
             </div>
-
         </div>
     )
 };

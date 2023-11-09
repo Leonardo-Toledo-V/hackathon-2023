@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/landing/Navbar'
 import List from '../components/lists/Accordion'
 import Sponsors from '../components/Sponsors'
+import Footer from '../components/footer/Footer'
 
 const Lists = () => {
     return (
@@ -21,6 +22,7 @@ const Lists = () => {
                         <List title="Secretaria de educación" subtitle="Conoce más" defaultContent="Dedicada a la educación"/>
                     </div>
                     <div className='bg-[url(./andres/listsimg3.png)] w-[1000px] h-[1px] mt-4'></div>
+
 
                     <div className='w-[900px] flex text-sm mt-10 mb-4'>
                         <div className='bg-[url(./andres/listsimg2.svg)] w-[215px] h-[75px] mt-2 bg-cover ml-8 mr-[40px]'></div>
@@ -46,6 +48,7 @@ const Lists = () => {
                 <div className='py-32'>
                     <Sponsors />
                 </div>
+                <Footer/>
             </div>
         </>
     )
