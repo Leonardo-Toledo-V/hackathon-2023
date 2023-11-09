@@ -1,5 +1,6 @@
 import React from 'react'
-import { Input, Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
+import axios from "../../libs/axios";
 
 const EyeSlashFilledIcon = (props) => (
     <svg
@@ -60,6 +61,34 @@ const EyeFilledIcon = (props) => (
 export default function FormRegister() {
     const [isVisible, setIsVisible] = React.useState(false);
 
+    const [data, setData] = React.useState({
+        username: "",
+        email: "",
+        password: "",
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('/user/register', JSON.stringify({
+            "username": data.username,
+            "email": data.email,
+            "password": data.password
+        })).then(function (response) {
+            
+        }).catch(function (err) {
+            console.log(err)
+        });
+    };
+
     const toggleVisibility = () => setIsVisible(!isVisible);
     return (
         <>
@@ -71,12 +100,15 @@ export default function FormRegister() {
                             Balam
                         </h1>
                     </div>
-                    <form className="mt-8 space-y-6">
+                    <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                         <div className="">
                             <div>
                                 <Input
-                                    type="email"
+                                onChange={handleChange}
+                                    type="username"
                                     label="Email"
+                                    name="email"
+                                    id="email"
                                     variant='underlined'
                                     placeholder="Enter your email"
                                     radius="sm"
@@ -84,9 +116,25 @@ export default function FormRegister() {
                                     className="h-14 text-[#48453A]"
                                 />
                             </div>
+                            <div className='mt-8'>
+                                <Input
+                                    onChange={handleChange}
+                                    label="Username"
+                                    variant='underlined'
+                                    name="username"
+                                    id="username"
+                                    placeholder="Enter your username"
+                                    radius="sm"
+                                    isClearable
+                                    className="h-14 text-[#48453A]"
+                                />
+                            </div>
                             <div className="mt-8">
                                 <Input
+                                    onChange={handleChange}
                                     label="Password"
+                                    name="password"
+                                    id="password"
                                     variant='underlined'
                                     radius="sm"
                                     endContent={
@@ -130,25 +178,16 @@ export default function FormRegister() {
                             >
                                 Ingresar
                             </button>
-                            <button
-                                type="submit"
-                                className="group relative flex w-full justify-center rounded-sm bg-white px-3 py-2 text-sm font-light text-[#444444]  transition duration-300 font-lato border-[0.1px] mb-4 border-gray-400"
-                            >
-                                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <img className="h-5 w-5" src="/google.svg" alt="google" />
-                                </span>
-                                Ingresar con Google
-                            </button>
                             <div className="flex justify-center">
                                 <div className="flex items-center mb-4 text-sm ">
                                     <label
                                         htmlFor="checkbox"
                                         className="font-lato text-[#B7B7B7] "
                                     >
-                                        ¿No tienes una cuenta?
+                                        ¿Ya tienes una cuenta?
                                     </label>
-                                    <a href="/register">
-                                        <span className="text-[#82774a] font-lato ml-2 cursor-pointer hover:text-[#48453A] duration-300 ">Registrarse</span>
+                                    <a href="/login">
+                                        <span className="text-[#82774a] font-lato ml-2 cursor-pointer hover:text-[#48453A] duration-300 ">Inicia sesion</span>
                                     </a>
                                 </div>
                             </div>

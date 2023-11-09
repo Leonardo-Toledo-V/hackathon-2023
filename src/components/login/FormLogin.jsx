@@ -1,5 +1,6 @@
 import React from 'react'
-import { Input, Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
+import axios from "../../libs/axios";
 
 const EyeSlashFilledIcon = (props) => (
     <svg
@@ -60,6 +61,32 @@ const EyeFilledIcon = (props) => (
 export default function FormLogin() {
     const [isVisible, setIsVisible] = React.useState(false);
 
+    const [data, setData] = React.useState({
+        email: "",
+        password: ""
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('/user/login', JSON.stringify({
+            "email": data.email,
+            "password": data.password
+        })).then(function (response) {
+            console.log("el mejor soy yo")
+        }).catch(function (err) {
+            console.log(err)
+        });
+    };
+
     const toggleVisibility = () => setIsVisible(!isVisible);
     return (
         <>
@@ -71,12 +98,15 @@ export default function FormLogin() {
                             Balam
                         </h1>
                     </div>
-                    <form className="mt-8 space-y-6">
+                    <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                         <div className="">
                             <div>
                                 <Input
+                                    onChange={handleChange}
                                     type="email"
                                     label="Email"
+                                    name="email"
+                                    id="email"
                                     variant='underlined'
                                     placeholder="Enter your email"
                                     radius="sm"
@@ -86,7 +116,10 @@ export default function FormLogin() {
                             </div>
                             <div className="mt-8">
                                 <Input
+                                    onChange={handleChange}
                                     label="Password"
+                                    name="password"
+                                    id="password"
                                     variant='underlined'
                                     radius="sm"
                                     endContent={

@@ -9,7 +9,7 @@ export default function Login() {
                 <FormLogin/>
             </div>
             <div className="relative w-1/2 h-full sm:flex flex-col hidden">
-                <PhotoLogin/>
+                <PhotoLogin name="img1"/>
             </div>
         </div>
     )
