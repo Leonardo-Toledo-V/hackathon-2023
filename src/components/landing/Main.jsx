@@ -12,11 +12,11 @@ export default function Main() {
                 <motion.div
                     variants={fadeIn("up", 0.1)}
                     initial="hidden"
-                    whileInView={"show"}
-                    className='mt-10'>
-                    <p className='text-center xl:text-left font-lato text-md mx-8 leading-tight text-[#C63F26]'>Justicia para Chiapas</p>
-                    <h1 className=' text-[#2C2C2C] text-center xl:text-left text-2xl xl:text-[6rem] leading-none font-inter mx-6 uppercase'>Balam</h1>
-                    <br/><span className='text-[#93311F] text-left text-2xl xl:text-[6rem] leading-5 font-inter mx-6  uppercase'>transparencia<br/></span>
+                    whileInView={"show"}>
+                    <p className='text-center xl:text-left font-lato text-lg mx-8 text-[#b71540]'>Dentro de </p>
+                    <h1 className=' text-[#ffffffca] text-center xl:text-left text-2xl xl:text-8xl font-inter mx-6 uppercase'>Balam<br />
+                        <span className='bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase '>transparencia</span></h1>
+                    <br />
                 </motion.div>
                 <div className="bg-[url('/img1.png')] xl:h-[30rem] bg-center bg-cover xl:flex mt-[-1rem]" >
                     <div className='w-[70rem]'>
