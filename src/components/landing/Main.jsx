@@ -25,7 +25,7 @@ export default function Main() {
                             className='font-inter text-[#ffffffca] uppercase text-left text-4xl xl:text-8xl mx-6 lg:text-7xl md:text-6xl sm:text-5xl'>en Chiapas</motion.h2>
                     </div>
                     <div className="flex justify-end mt-16 lg:flex lg:justify-end lg:mt-32 md:flex md:justify-end md:mt-32 sm:flex sm:justify-end sm:mt-20">
-                        <div className='text-white font-lato text-xl ml-14 xl:self-end xl:order-1 pb-12 flex xl:ml-20 md:ml-20 sm:ml-16'>
+                        <div className='text-white font-lato text-xl ml-8 xl:self-end xl:order-1 pb-12 flex xl:ml-20 md:ml-20 sm:ml-16'>
                             <motion.p
                                 variants={fadeIn("down", 0.5)}
                                 initial="hidden"
