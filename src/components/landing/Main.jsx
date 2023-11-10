@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../variants.js"
 import ScrollTrigger from 'react-scroll-trigger'
 import CountUp from 'react-countup'
-import CardComponent from './Card.jsx'
+import Card from './Card.jsx'
 
 
 export default function Main() {
@@ -37,36 +37,37 @@ export default function Main() {
                                 initial="hidden"
                                 whileInView={"show"}
                                 className='max-w-sm text-xs xl:text-lg'>Unidos por Chiapas, transformando la gobernanza con transparencia y apertura para un futuro más justo y equitativo</motion.p>
-                            {/* xl:max-w-sm lg:max-w-sm md:max-w-sm sm:max-w-sm */}
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div className='mt-12  w-full'>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full place-items-center'>
-                        <CardComponent>
+                <div className='my-12  w-full'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 place-items-stretch max-w-7xl mx-36 gap-2'>
+                        <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-medium'>
-                                {count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
+                                <h1 className='text-white font-inter'>{count && <CountUp start={0} end={100} duration={2} delay={0} />} K</h1>
                             </ScrollTrigger>
-                        </CardComponent>
-                        <CardComponent>
+                        </Card>
+                        <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-medium'>
-                                {count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
+                                <h1 className='text-white font-inter'>{count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
                             </ScrollTrigger>
-                        </CardComponent>
-                        <CardComponent>
+                        </Card>
+                        <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>
-                                    <span className='text-md bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase lg:text-left xl:text-5xl lg:text-2xl sm:text-lg md:text-xl'>$ {count && <CountUp start={0} end={100} duration={2} delay={0} />}</span></h1>
+                                <h1 className='text-white font-inter'>$ {count && <CountUp start={0} end={100} duration={2} delay={0} />}</h1>
                             </ScrollTrigger>
-                        </CardComponent>
-    
+                        </Card>
+                        <Card>
+                            <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
+                                <h1 className='text-white font-inter'>{count && <CountUp start={0} end={100} duration={2} delay={0} />}%</h1>
+                            </ScrollTrigger>
+                        </Card>
+
                     </div>
                 </div>
-                
+
                 <div className='flex justify-center xl:justify-start mt-24 xl:mt-0 lg:mt-32 md:mt-28 sm:mt-24 bg-[#141414] py-10'>
                     <div className='sm:w-[37rem] sm:h-[30rem] hidden sm:block'>
                         <img className=' xl:w-full xl:h-full object-cover bg-top sm:w-[400px] sm:h-[480px] md:w-[450px] md:h-[530px]' src="img2.png" alt="" />
