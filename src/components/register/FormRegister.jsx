@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from "@nextui-org/react";
+import { Checkbox, Input } from "@nextui-org/react";
 import axios from "../../libs/axios";
 
 const EyeSlashFilledIcon = (props) => (
@@ -61,10 +61,17 @@ const EyeFilledIcon = (props) => (
 export default function FormRegister() {
     const [isVisible, setIsVisible] = React.useState(false);
 
+    const [isInstitution, setIsInstitution] = React.useState(false);
+
+    const handleCheckboxChange = () => {
+        setIsInstitution((prevValue) => !prevValue);
+    };
+
     const [data, setData] = React.useState({
         username: "",
         email: "",
         password: "",
+        role: "",
     });
 
     const handleChange = (event) => {
@@ -75,15 +82,16 @@ export default function FormRegister() {
         }));
     };
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
+        const roleValue = isInstitution ? "institution" : "viewer";
         axios.post('/user/register', JSON.stringify({
             "username": data.username,
             "email": data.email,
-            "password": data.password
+            "password": data.password,
+            "role": roleValue,
         })).then(function (response) {
-
+                
         }).catch(function (err) {
             console.log(err)
         });
@@ -158,16 +166,20 @@ export default function FormRegister() {
                         <div>
                             <div className="flex justify-between mb-6">
                                 <div className="flex items-center mb-4">
-                                    <input
+                                    <Checkbox
+                                        color='default'
                                         id="checkbox"
+                                        name='checkbox'
                                         className="border-[#B7B7B7] mr-2"
                                         type="checkbox"
+                                        checked={isInstitution}
+                                        onChange={handleCheckboxChange}
                                     />
                                     <label
                                         htmlFor="checkbox"
                                         className="text-sm font-lato text-[#B7B7B7] "
                                     >
-                                        Recordarme por 30 días
+                                        Registrarse como institución
                                     </label>
                                 </div>
                                 <div>

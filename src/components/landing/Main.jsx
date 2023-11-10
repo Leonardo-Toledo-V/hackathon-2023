@@ -44,25 +44,32 @@ export default function Main() {
             </div>
             <div>
                 <div className='mt-12  w-full'>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full place-items-center'>
+                    <div className='grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 w-full place-items-center'>
                         <CardComponent>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>
-                                    <span className='text-md bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase lg:text-left xl:text-5xl lg:text-2xl sm:text-lg md:text-xl'>{count && <CountUp start={0} end={100} duration={2} delay={0} />} +</span></h1>
+                                <h1 className='text-white font-medium'>
+                                {count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
                             </ScrollTrigger>
                         </CardComponent>
                         <CardComponent>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>
-                                    <span className='text-md bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase lg:text-left xl:text-5xl lg:text-2xl sm:text-lg md:text-xl'>{count && <CountUp start={0} end={91} duration={2} delay={0} />} %</span></h1>
+                                <h1 className='text-white font-medium'>
+                                {count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
                             </ScrollTrigger>
                         </CardComponent>
                         <CardComponent>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>
-                                    <span className='text-md bg-gradient-to-r from-[#e55039] to-[#b71540] text-transparent bg-clip-text text-left font-inter uppercase lg:text-left xl:text-5xl lg:text-2xl sm:text-lg md:text-xl'>$ {count && <CountUp start={0} end={100} duration={2} delay={0} />}</span></h1>
+                                <h1 className='text-white font-medium'>
+                                {count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
                             </ScrollTrigger>
                         </CardComponent>
+                        <CardComponent>
+                            <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
+                                <h1 className='text-white font-medium'>
+                                {count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
+                            </ScrollTrigger>
+                        </CardComponent>
+    
                     </div>
                 </div>
                 <div className='flex justify-center xl:justify-start mt-24 xl:mt-44 lg:mt-32 md:mt-28 sm:mt-24 bg-[#141414] py-32'>
