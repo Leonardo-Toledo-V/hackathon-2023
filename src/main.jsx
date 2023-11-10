@@ -9,18 +9,20 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NextUIProvider } from '@nextui-org/react'
 import Register from './pages/Register.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import TimeLine from './pages/TimeLine.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <NextUIProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/app" element={<App />} />
           <Route path="/login" element={<Login />} />
           <Route path="/lists" element={<Lists />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<TimeLine />} />
         </Routes>
       </BrowserRouter>
     </NextUIProvider>

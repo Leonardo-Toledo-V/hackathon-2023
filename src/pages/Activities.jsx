@@ -84,13 +84,14 @@ const Activities = () => {
                         </div>
 
                         <div>
-                            <List title="Campaña sexual en Suchiapa" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <List title="Campaña educación sexual en Suchiapa" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
 
                             <Likes />
                         </div>
                     </div>
+
                 </div>
                 <div className='py-32'>
                     <Sponsors />

@@ -5,26 +5,31 @@ export default function Header() {
     return (
         <Navbar position="static" className="bg-[#141414] font-lato">
             <NavbarBrand>
-                <Link color="foreground" href="/" className="text-[#ffffffca]">
+                <Link color="foreground" href="/app" className="text-[#ffffffca]">
                     <img
                         className="w-10"
                         src="eye.svg" />
                 </Link>
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-12" justify="center">
-                <NavbarItem>
+            <NavbarItem isActive>
                     <Link color="foreground" href="/lists" className="text-[#ffffffca]">
                         Secretarias
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
-                    <Link href="/activities" className="text-[#ffffffca]">
+                    <Link color="foreground" href="/activities" className="text-[#ffffffca]">
                         Actividades
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
-                    <Link href="/dashboard" className="text-[#ffffffca]">
+                    <Link color="foreground" href="/dashboard" className="text-[#ffffffca]">
                         Dashboard
+                    </Link>
+                </NavbarItem>
+                <NavbarItem isActive>
+                    <Link color="foreground" href="/" className="text-[#ffffffca]">
+                        Timeline
                     </Link>
                 </NavbarItem>
             </NavbarContent>

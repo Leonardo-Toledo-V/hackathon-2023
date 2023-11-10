@@ -81,7 +81,7 @@ export default function FormLogin() {
             "email": data.email,
             "password": data.password
         })).then(function (response) {
-            console.log("el mejor soy yo")
+            console.log("el mejor x soy yo")
         }).catch(function (err) {
             console.log(err)
         });
