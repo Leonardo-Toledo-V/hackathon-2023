@@ -42,9 +42,8 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-
             <div>
-                <div className='mt-12'>
+                <div className='mt-12  w-full'>
                     <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 w-full place-items-center'>
                         <CardComponent>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
@@ -66,7 +65,7 @@ export default function Main() {
                         </CardComponent>
                     </div>
                 </div>
-                <div className='flex justify-center xl:justify-start mt-24 xl:mt-44 lg:mt-32 md:mt-28 sm:mt-24'>
+                <div className='flex justify-center xl:justify-start mt-24 xl:mt-44 lg:mt-32 md:mt-28 sm:mt-24 bg-[#141414] py-32'>
                     <div className='sm:w-[37rem] sm:h-[30rem] hidden sm:block'>
                         <img className=' xl:w-full xl:h-full object-cover bg-top sm:w-[400px] sm:h-[480px] md:w-[450px] md:h-[530px]' src="img2.png" alt="" />
                     </div>
@@ -78,7 +77,7 @@ export default function Main() {
                                 whileInView={"show"}
                                 className="text-2xl xl:text-7xl text-[#ffffffca] uppercase font-inter lg:text-6xl md:text-5xl sm:text-3xl">Un chiapas<span className='text-[#b71540]'> transparente</span></motion.h3>
                         </div>
-                        <div className='mt-10 sm:flex sm:justify-between sm:items-center xl:mt-12 text-[#ffffffca] font-lato text-xl gap-8 lg:text-lg md:mr-3 sm:gap-6 sm:mt-10'>
+                        <div className='mt-10 sm:flex sm:justify-between sm:items-center xl:mt-12 text-[#ffffffca] font-lato text-xl gap-8 lg:text-lg md:mr-3 sm:gap-6'>
                             <motion.p
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
@@ -96,9 +95,8 @@ export default function Main() {
                 </div>
             </div>
 
-
             <div>
-                <div className='flex mt-28 xl:mt-44 lg:mt-28 md:mt-24 sm:mt-20 '>
+                <div className='flex mt-28  lg:mt-28 md:mt-24 sm:mt-20 '>
                     <div className='flex flex-col ml-12 mr-8 xl:ml-12 xl:mt-16 lg:mt-8 lg:mr-10 md:mt-6 md:mr-16 sm:mt-8 sm:mr-12'>
                         <motion.div
                             variants={fadeIn("up", 0.1)}
@@ -114,9 +112,7 @@ export default function Main() {
                                 </h3>
                             </div>
                         </motion.div>
-
                         <div>
-
                             <motion.p
                                 className='mt-6 text-[#ffffffca] max-w-3xl font-lato text-xl md:text-lg sm:text-base'
                                 variants={fadeIn("up", 0.1)}

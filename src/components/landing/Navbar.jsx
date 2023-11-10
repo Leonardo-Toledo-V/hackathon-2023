@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 
 export default function Header() {
     return (
-        <Navbar position="static" className="bg-[#0F0F0F] font-lato">
+        <Navbar position="static" className="bg-[#141414] font-lato">
             <NavbarBrand>
                 <Link color="foreground" href="/" className="text-[#ffffffca]">
                     <img
