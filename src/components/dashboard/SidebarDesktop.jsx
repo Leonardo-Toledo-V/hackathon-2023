@@ -5,6 +5,7 @@ import { TbLayoutDashboard } from "react-icons/tb"
 
 const navigation = [
     { name: 'Panel', href: '/dashboard', icon: TbLayoutDashboard, current: false },
+    { name: 'Attachments', href: '/dashboard', icon: TbLayoutDashboard, current: false },
 ];
 
 function classNames(...classes) {

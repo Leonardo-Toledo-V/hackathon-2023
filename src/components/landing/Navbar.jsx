@@ -22,6 +22,11 @@ export default function Header() {
                         Actividades
                     </Link>
                 </NavbarItem>
+                <NavbarItem isActive>
+                    <Link href="/dashboard" className="text-[#ffffffca]">
+                        Dashboard
+                    </Link>
+                </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem>
@@ -30,6 +35,7 @@ export default function Header() {
                     </Button>
                 </NavbarItem>
             </NavbarContent>
+
         </Navbar>
     );
 }
