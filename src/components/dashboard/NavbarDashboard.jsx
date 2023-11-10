@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { Bars3BottomLeftIcon, UserIcon } from '@heroicons/react/24/outline'
+import Cookies from 'js-cookie'
 
 const userNavigation = [
     { name: 'Sign out', href: '/' },
@@ -10,7 +11,7 @@ function classNames(...classes) {
 }
 
 const handleLogOut = () => {
-    
+    Cookies.remove('balam-auth');
 }
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Checkbox, Input } from "@nextui-org/react";
 import axios from "../../libs/axios";
+import Cookies from 'js-cookie';
 
 const EyeSlashFilledIcon = (props) => (
     <svg
@@ -91,7 +92,8 @@ export default function FormRegister() {
             "password": data.password,
             "role": roleValue,
         })).then(function (response) {
-                
+                console.log(response.data);
+                Cookies.set('balam-auth', response.data)
         }).catch(function (err) {
             console.log(err)
         });
