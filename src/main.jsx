@@ -22,7 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/activities" element={<Activities />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="/" element={<TimeLine />} /> */}
         </Routes>
       </BrowserRouter>
     </NextUIProvider>

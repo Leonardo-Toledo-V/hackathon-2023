@@ -7,9 +7,8 @@ export default function Panel({ children }) {
         <>
             {/* <SideBarDesktop /> */}
             <Header />
-
-            <div className="flex flex-col md:pl-64">
-                <NavbarDashboard />
+            <div className="flex flex-col">
+                {/* <NavbarDashboard /> */}
                 <main className="flex-1 bg-[#101010] h-screen">
                     <div className="py-6">
                         <div className="lg:mx-10 xl:mx-10 px-4 sm:px-6 md:px-8">
