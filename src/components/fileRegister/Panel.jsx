@@ -1,4 +1,4 @@
-import NavbarDashboard from './NavbarDashboard'
+import NavbarDashboard from './NavbarFileRegister'
 // import SideBarDesktop from './SidebarDesktop'
 import HeaderDash from '../landing/NavbarDash'
 
