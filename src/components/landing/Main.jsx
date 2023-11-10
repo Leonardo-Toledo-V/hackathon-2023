@@ -46,22 +46,22 @@ export default function Main() {
                     <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 place-items-stretch max-w-7xl mx-36 gap-2'>
                         <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>{count && <CountUp start={0} end={100} duration={2} delay={0} />} K</h1>
+                                <h1 className='text-[#ffffffca]'>{count && <CountUp start={0} end={75} duration={2} delay={0} />} K</h1>
                             </ScrollTrigger>
                         </Card>
                         <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>{count && <CountUp start={0} end={100} duration={2} delay={0} />} +</h1>
+                                <h1 className='text-[#ffffffca]'>{count && <CountUp start={0} end={23} duration={2} delay={0} />} +</h1>
                             </ScrollTrigger>
                         </Card>
                         <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>$ {count && <CountUp start={0} end={100} duration={2} delay={0} />}</h1>
+                                <h1 className='text-[#ffffffca]'>$ {count && <CountUp start={0} end={92} duration={2} delay={0} />}</h1>
                             </ScrollTrigger>
                         </Card>
                         <Card>
                             <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
-                                <h1 className='text-white font-inter'>{count && <CountUp start={0} end={100} duration={2} delay={0} />}%</h1>
+                                <h1 className='text-[#ffffffca]'>{count && <CountUp start={0} end={34} duration={2} delay={0} />}%</h1>
                             </ScrollTrigger>
                         </Card>
 
