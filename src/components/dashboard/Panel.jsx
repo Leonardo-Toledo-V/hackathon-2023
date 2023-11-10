@@ -1,10 +1,13 @@
 import NavbarDashboard from './NavbarDashboard'
-import SideBarDesktop from './SidebarDesktop'
+// import SideBarDesktop from './SidebarDesktop'
+import Header from '../landing/Navbar'
 
 export default function Panel({ children }) {
     return (
         <>
-            <SideBarDesktop />
+            {/* <SideBarDesktop /> */}
+            <Header />
+
             <div className="flex flex-col md:pl-64">
                 <NavbarDashboard />
                 <main className="flex-1 bg-[#101010] h-screen">

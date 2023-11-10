@@ -27,11 +27,6 @@ export default function Header() {
                         Dashboard
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive>
-                    <Link color="foreground" href="/" className="text-[#ffffffca]">
-                        Timeline
-                    </Link>
-                </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem>

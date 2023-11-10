@@ -81,6 +81,7 @@ export default function FormLogin() {
             "email": data.email,
             "password": data.password
         })).then(function (response) {
+            <Link href="/app"></Link>
             console.log("el mejor x soy yo")
         }).catch(function (err) {
             console.log(err)

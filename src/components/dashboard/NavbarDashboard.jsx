@@ -18,17 +18,8 @@ export default function NavbarDashboard() {
 
     return (
         <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-[#101010] shadow">
-            {/* <button
-                type="button"
-                className=" px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 md:hidden"
-                onClick={() => setSidebarOpen(true)}
-            >
-                <span className="sr-only">Open sidebar</span>
-                <Bars3BottomLeftIcon className="h-6 w-6" aria-hidden="true" />
-            </button> */}
             <div className="flex flex-1 justify-end px-4">
                 <div className="ml-4 flex items-center md:ml-6">
-                    {/* Profile dropdown */}
                     <Menu as="div" className="relative ml-3">
                         <div>
                             <Menu.Button className="flex max-w-xs items-center rounded-full text-gray-400 bg-[#101010] text-sm focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
