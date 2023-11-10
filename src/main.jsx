@@ -9,7 +9,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NextUIProvider } from '@nextui-org/react'
 import Register from './pages/Register.jsx'
 import Dashboard from './pages/Dashboard.jsx'
-import TimeLine from './pages/TimeLine.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -92,7 +92,6 @@ export default function FormRegister() {
             "password": data.password,
             "role": roleValue,
         })).then(function (response) {
-                console.log(response.data);
                 Cookies.set('balam-auth', response.data)
         }).catch(function (err) {
             console.log(err)
