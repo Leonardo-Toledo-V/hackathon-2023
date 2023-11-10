@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer'
 function App() {
 
   return (
-    <main className='bg-[#0F0F0F] h-full w-full'>
+    <main className='bg-[#141414] h-full w-full'>
         <Header/>
         <Main/>
         <Footer/>

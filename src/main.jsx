@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NextUIProvider } from '@nextui-org/react'
 import Register from './pages/Register.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import FileRegister from './pages/FileRegister.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/activities" element={<Activities />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/fileregister" element={<FileRegister />} />
         </Routes>
       </BrowserRouter>
     </NextUIProvider>

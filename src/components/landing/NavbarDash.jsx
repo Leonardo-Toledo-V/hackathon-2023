@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import Cookies from "js-cookie";
 
-export default function Header() {
+export default function HeaderDash() {
     const isAuthenticated = Cookies.get("balam-auth");
-
     return (
         <Navbar position="static" className="bg-[#141414] font-lato">
             <NavbarBrand>
@@ -40,7 +39,7 @@ export default function Header() {
                         variant="light"
                         size="sm"
                     >
-                        Sign Up
+                        Log out
                     </Button>
                 </NavbarItem>
             </NavbarContent>

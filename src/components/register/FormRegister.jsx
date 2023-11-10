@@ -1,6 +1,8 @@
 import React from 'react'
-import { Input } from "@nextui-org/react";
+import { Checkbox, Input } from "@nextui-org/react";
 import axios from "../../libs/axios";
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 
 const EyeSlashFilledIcon = (props) => (
     <svg
@@ -61,13 +63,25 @@ const EyeFilledIcon = (props) => (
 export default function FormRegister() {
     const [isVisible, setIsVisible] = React.useState(false);
 
+    const [isInstitution, setIsInstitution] = React.useState(false);
+
+    const [isError, setError] = React.useState(false);
+
+    const navigate = useNavigate();
+
+    const handleCheckboxChange = () => {
+        setIsInstitution((prevValue) => !prevValue);
+    };
+
     const [data, setData] = React.useState({
         username: "",
         email: "",
         password: "",
+        role: "",
     });
 
     const handleChange = (event) => {
+        setError(false);
         const { name, value } = event.target;
         setData((prevData) => ({
             ...prevData,
@@ -75,17 +89,19 @@ export default function FormRegister() {
         }));
     };
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
+        const roleValue = isInstitution ? "institution" : "viewer";
         axios.post('/user/register', JSON.stringify({
             "username": data.username,
             "email": data.email,
-            "password": data.password
+            "password": data.password,
+            "role": roleValue,
         })).then(function (response) {
-
-        }).catch(function (err) {
-            console.log(err)
+                Cookies.set('balam-auth', response.data)
+                navigate("/");
+        }).catch(function () {
+            setError(true);
         });
     };
 
@@ -115,9 +131,9 @@ export default function FormRegister() {
                                     id="email"
                                     variant='underlined'
                                     placeholder="Enter your email"
+                                    isInvalid={isError ? true : false}
                                     radius="sm"
                                     isClearable
-                                    className="h-14 text-[#48453A]"
                                 />
                             </div>
                             <div className='mt-8'>
@@ -127,10 +143,11 @@ export default function FormRegister() {
                                     variant='underlined'
                                     name="username"
                                     id="username"
+                                    isInvalid={isError ? true : false}
+                                    errorMessage={isError ? "User o email already exist" : ""}
                                     placeholder="Enter your username"
                                     radius="sm"
                                     isClearable
-                                    className="h-14 text-[#48453A]"
                                 />
                             </div>
                             <div className="mt-8">
@@ -158,16 +175,20 @@ export default function FormRegister() {
                         <div>
                             <div className="flex justify-between mb-6">
                                 <div className="flex items-center mb-4">
-                                    <input
+                                    <Checkbox
+                                        color='default'
                                         id="checkbox"
+                                        name='checkbox'
                                         className="border-[#B7B7B7] mr-2"
                                         type="checkbox"
+                                        checked={isInstitution}
+                                        onChange={handleCheckboxChange}
                                     />
                                     <label
                                         htmlFor="checkbox"
                                         className="text-sm font-lato text-[#B7B7B7] "
                                     >
-                                        Recordarme por 30 días
+                                        Registrarse como institución
                                     </label>
                                 </div>
                                 <div>

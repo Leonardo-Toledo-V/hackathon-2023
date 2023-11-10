@@ -2,8 +2,14 @@ import React from 'react'
 import Sponsors from '../Sponsors'
 import { motion } from "framer-motion"
 import { fadeIn } from "../variants.js"
+import ScrollTrigger from 'react-scroll-trigger'
+import CountUp from 'react-countup'
+import Card from './Card.jsx'
+
 
 export default function Main() {
+    const [count, setCount] = React.useState(false);
+
     return (
         <div className='w-full'>
             <div className='mt-12 flex flex-col'>
@@ -31,15 +37,39 @@ export default function Main() {
                                 initial="hidden"
                                 whileInView={"show"}
                                 className='max-w-sm text-xs xl:text-lg'>Unidos por Chiapas, transformando la gobernanza con transparencia y apertura para un futuro más justo y equitativo</motion.p>
-                            {/* xl:max-w-sm lg:max-w-sm md:max-w-sm sm:max-w-sm */}
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div>
-                <div className='flex justify-center xl:justify-start mt-24 xl:mt-44 lg:mt-32 md:mt-28 sm:mt-24'>
+               {/*  <div className='my-12 w-full hidden md:block'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 place-items-stretch max-w-7xl mx-36 gap-2'>
+                        <Card>
+                            <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
+                                <h1 className='text-[#ffffffca]'>{count && <CountUp start={0} end={75} duration={2} delay={0} />} K</h1>
+                            </ScrollTrigger>
+                        </Card>
+                        <Card>
+                            <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
+                                <h1 className='text-[#ffffffca]'>{count && <CountUp start={0} end={23} duration={2} delay={0} />} +</h1>
+                            </ScrollTrigger>
+                        </Card>
+                        <Card>
+                            <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
+                                <h1 className='text-[#ffffffca]'>$ {count && <CountUp start={0} end={92} duration={2} delay={0} />}</h1>
+                            </ScrollTrigger>
+                        </Card>
+                        <Card>
+                            <ScrollTrigger onEnter={() => setCount(true)} onExit={() => setCount(false)}>
+                                <h1 className='text-[#ffffffca]'>{count && <CountUp start={0} end={34} duration={2} delay={0} />}%</h1>
+                            </ScrollTrigger>
+                        </Card>
+
+                    </div>
+                </div> */}
+                //
+
+                <div className='flex justify-center xl:justify-start mt-24 xl:mt-0 lg:mt-32 md:mt-28 sm:mt-24 bg-[#141414] py-10'>
                     <div className='sm:w-[37rem] sm:h-[30rem] hidden sm:block'>
                         <img className=' xl:w-full xl:h-full object-cover bg-top sm:w-[400px] sm:h-[480px] md:w-[450px] md:h-[530px]' src="img2.png" alt="" />
                     </div>
@@ -56,22 +86,21 @@ export default function Main() {
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='mr-8 xl:max-w-xs lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base md:text-xl lg:text-xl'>"Balam, en el lenguaje maya, lleva consigo un significado esencial “el jaguar”.
+                                className='mr-8 xl:w-[50%] lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base md:text-xl lg:text-xl'>"Balam, en el lenguaje maya, lleva consigo un significado esencial “el jaguar”.
                                 A través de este nombre, nuestra misión es presentar al pueblo chiapaneco cómo la justicia se pone en práctica y cómo el pueblo tiene voz y voto en asuntos de importancia.</motion.p>
                             <motion.p
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='mt-5 mr-8 xl:max-w-xs lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base sm:mt-0 md:text-xl lg:text-xl'>Balam proporciona acceso a información detallada sobre las actividades del gobierno en Chiapas.<br />
+                                className='mt-5 mr-8 xl:w-[50%] lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base sm:mt-0 md:text-xl lg:text-xl'>Balam proporciona acceso a información detallada sobre las actividades del gobierno en Chiapas.<br />
                                 Ofreciendo una visión completa de cómo se utilizan los recursos públicos para el bienestar de la comunidad chiapaneca.</motion.p>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div>
-                <div className='flex mt-28 xl:mt-44 lg:mt-28 md:mt-24 sm:mt-20 '>
+                <div className='flex mt-28  lg:mt-28 md:mt-24 sm:mt-20 '>
                     <div className='flex flex-col ml-12 mr-8 xl:ml-12 xl:mt-16 lg:mt-8 lg:mr-10 md:mt-6 md:mr-16 sm:mt-8 sm:mr-12'>
                         <motion.div
                             variants={fadeIn("up", 0.1)}
@@ -87,9 +116,7 @@ export default function Main() {
                                 </h3>
                             </div>
                         </motion.div>
-
                         <div>
-
                             <motion.p
                                 className='mt-6 text-[#ffffffca] max-w-3xl font-lato text-xl md:text-lg sm:text-base'
                                 variants={fadeIn("up", 0.1)}
@@ -103,7 +130,7 @@ export default function Main() {
                 </div>
             </div>
 
-            
+
             <div className='py-32'>
                 <Sponsors />
             </div>
