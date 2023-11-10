@@ -27,7 +27,7 @@ export default function Data() {
 
                     <div className="sm:px-4 py-6 sm:py-10 md:px-0">
                         <dt className="text-sm font-medium leading-6 text-gray-100">Email address</dt>
-                        <input className='mt-5 bg-[#18181A] w-full text-white border-b-1 border-[#858585] sm:h-10 sm:mt-2' type="text" />
+                        <input  className='mt-5 bg-[#18181A] w-full text-white border-b-1 border-[#858585] sm:h-10 sm:mt-2' type="text" />
                     </div>
 
                     <div className="sm:px-4 py-6 sm:py-10 md:px-0">
