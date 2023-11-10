@@ -67,6 +67,7 @@ export default function Main() {
 
                     </div>
                 </div> */}
+                //
 
                 <div className='flex justify-center xl:justify-start mt-24 xl:mt-0 lg:mt-32 md:mt-28 sm:mt-24 bg-[#141414] py-10'>
                     <div className='sm:w-[37rem] sm:h-[30rem] hidden sm:block'>
