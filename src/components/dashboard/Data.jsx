@@ -37,7 +37,7 @@ export default function Data() {
 
                     <div className="sm:px-4 py-6 sm:py-10 md:px-0 md:py-5">
                         <dt className="text-sm font-medium leading-6 text-gray-100">About</dt>
-                        <textarea name="" id="" cols="30" rows="10" className='w-[99%] mt-5 bg-[#101010] rounded-lg border-1 border-[#36373E]'></textarea>
+                        <textarea name="" id="" cols="30" rows="10" className='w-[99%] mt-5 bg-[#101010] rounded-lg border-1 border-[#36373E] text-white'></textarea>
                     </div>
                     
                     {/* <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
