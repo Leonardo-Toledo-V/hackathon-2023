@@ -40,7 +40,7 @@ const Activities = () => {
 
                     <div className='w-[900px] flex text-sm mb-4 mt-10'>
                         <div>
-                            <div className='bg-[url(./andres/activities2.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
+                            <div className='bg-[url(./andres/activities3.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
                         </div>
 
                         <div>
@@ -58,7 +58,7 @@ const Activities = () => {
 
                     <div className='w-[900px] flex text-sm mb-4 mt-10'>
                         <div>
-                            <div className='bg-[url(./andres/activities2.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
+                            <div className='bg-[url(./andres/activities4.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
                         </div>
 
                         <div>
@@ -76,7 +76,7 @@ const Activities = () => {
 
                     <div className='w-[900px] flex text-sm mb-10 mt-10'>
                         <div>
-                            <div className='bg-[url(./andres/activities2.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
+                            <div className='bg-[url(./andres/activities5.jpg)] w-[200px] h-[140px] bg-cover mr-5'></div>
                         </div>
 
                         <div>
@@ -84,7 +84,7 @@ const Activities = () => {
                         </div>
 
                         <div>
-                            <List title="Campaña contra el Sida en Yajalón" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
+                            <List title="Campaña sexual en Suchiapa" subtitle="Conoce más" defaultContent="Dedicada a la educación" />
                             <div className='bg-[url(./andres/listsimg3.png)] w-[700px] h-[1px] ml-5'></div>
                             <h3 className='ml-8 mt-3 text-white'>25 de agosto del 2022 - 8 de Noviembre del 2023</h3>
 

@@ -4,6 +4,7 @@ import { TbLayoutDashboard } from "react-icons/tb"
 
 
 const navigation = [
+    { name: 'Home', href: '/', icon: TbLayoutDashboard, current: false },
     { name: 'Panel', href: '/dashboard', icon: TbLayoutDashboard, current: false },
 ];
 

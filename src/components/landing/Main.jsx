@@ -77,18 +77,18 @@ export default function Main() {
                                 whileInView={"show"}
                                 className="text-2xl xl:text-7xl text-[#ffffffca] uppercase font-inter lg:text-6xl md:text-5xl sm:text-3xl">Un chiapas<span className='text-[#b71540]'> transparente</span></motion.h3>
                         </div>
-                        <div className='mt-10 sm:flex sm:justify-between sm:items-center xl:mt-12 text-[#ffffffca] font-lato text-xl gap-8 lg:text-lg md:mr-3 sm:gap-6'>
+                        <div className='mt-10 sm:flex sm:justify-between sm:items-center xl:mt-12 text-[#ffffffca] font-lato text-xl gap-8 lg:text-lg md:mr-3 sm:gap-6 sm:mt-10'>
                             <motion.p
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='mr-8 xl:max-w-xs lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base md:text-xl lg:text-xl'>"Balam, en el lenguaje maya, lleva consigo un significado esencial “el jaguar”.
+                                className='mr-8 xl:w-[50%] lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base md:text-xl lg:text-xl'>"Balam, en el lenguaje maya, lleva consigo un significado esencial “el jaguar”.
                                 A través de este nombre, nuestra misión es presentar al pueblo chiapaneco cómo la justicia se pone en práctica y cómo el pueblo tiene voz y voto en asuntos de importancia.</motion.p>
                             <motion.p
                                 variants={fadeIn("down", 0.1)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='mt-5 mr-8 xl:max-w-xs lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base sm:mt-0 md:text-xl lg:text-xl'>Balam proporciona acceso a información detallada sobre las actividades del gobierno en Chiapas.<br />
+                                className='mt-5 mr-8 xl:w-[50%] lg:w-[45%] md:w-[40%] sm:w-[170px] sm:text-base sm:mt-0 md:text-xl lg:text-xl'>Balam proporciona acceso a información detallada sobre las actividades del gobierno en Chiapas.<br />
                                 Ofreciendo una visión completa de cómo se utilizan los recursos públicos para el bienestar de la comunidad chiapaneca.</motion.p>
                         </div>
                     </div>
