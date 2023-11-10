@@ -6,7 +6,7 @@ export default function CardComponent({children}) {
 
     return (
         <Card className="max-w-[440px] dark">
-            <CardBody className="px-12 py-2 text-5xl">
+            <CardBody className="px-12 py-2">
                 {children}
             </CardBody>
         </Card>
