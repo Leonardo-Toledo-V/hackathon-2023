@@ -1,12 +1,15 @@
 import React from 'react'
+import Header from './components/landing/Navbar'
+import Main from './components/landing/Main'
+import Footer from './components/footer/Footer'
 
 function App() {
 
   return (
-    <main className='bg-[#EBE0D4] h-screen w-full'>
-      <div>
-        <p className='bg-red-500'> Hello world from vite and react and tailwind</p>
-      </div>
+    <main className='bg-[#0F0F0F] h-full w-full'>
+        <Header/>
+        <Main/>
+        <Footer/>
     </main>
   )
 }
