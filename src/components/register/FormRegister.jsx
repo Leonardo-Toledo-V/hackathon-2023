@@ -2,6 +2,7 @@ import React from 'react'
 import { Checkbox, Input } from "@nextui-org/react";
 import axios from "../../libs/axios";
 import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 
 const EyeSlashFilledIcon = (props) => (
     <svg
@@ -64,6 +65,10 @@ export default function FormRegister() {
 
     const [isInstitution, setIsInstitution] = React.useState(false);
 
+    const [isError, setError] = React.useState(false);
+
+    const navigate = useNavigate();
+
     const handleCheckboxChange = () => {
         setIsInstitution((prevValue) => !prevValue);
     };
@@ -76,6 +81,7 @@ export default function FormRegister() {
     });
 
     const handleChange = (event) => {
+        setError(false);
         const { name, value } = event.target;
         setData((prevData) => ({
             ...prevData,
@@ -92,9 +98,11 @@ export default function FormRegister() {
             "password": data.password,
             "role": roleValue,
         })).then(function (response) {
+            console.log(response.data)
                 Cookies.set('balam-auth', response.data)
-        }).catch(function (err) {
-            console.log(err)
+                navigate("/");
+        }).catch(function () {
+            setError(true);
         });
     };
 
@@ -124,9 +132,9 @@ export default function FormRegister() {
                                     id="email"
                                     variant='underlined'
                                     placeholder="Enter your email"
+                                    isInvalid={isError ? true : false}
                                     radius="sm"
                                     isClearable
-                                    className="h-14 text-[#48453A]"
                                 />
                             </div>
                             <div className='mt-8'>
@@ -136,10 +144,11 @@ export default function FormRegister() {
                                     variant='underlined'
                                     name="username"
                                     id="username"
+                                    isInvalid={isError ? true : false}
+                                    errorMessage={isError ? "User o email already exist" : ""}
                                     placeholder="Enter your username"
                                     radius="sm"
                                     isClearable
-                                    className="h-14 text-[#48453A]"
                                 />
                             </div>
                             <div className="mt-8">
