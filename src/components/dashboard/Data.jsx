@@ -2,7 +2,7 @@ import { PaperClipIcon } from '@heroicons/react/20/solid'
 
 export default function Data() {
     return (
-        <div>
+        <div className='w-full'>
             <div className='flex justify-center w-full md:grid md:grid-cols-2 mb-10'>
                 <div className="md:px-4 sm:px-0">
                     <h3 className="text-sm sm:text-lg text-center font-inter text-gray-100">Applicant Information</h3>
